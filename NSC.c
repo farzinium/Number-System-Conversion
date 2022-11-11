@@ -43,9 +43,9 @@ int main(){
 		}
 		if(b < 2){
 			pf("%s%d%s", "The base of a number can not be ", b, ".\nDo you want to enter another number?[Y/n]\n");
-			sf("%1s", &a[0]);	//user wants to enter another number
-			if(a[0] == 'Y'){	//goes to line 31
-				continue;
+			sf("%1s", &a[0]);	
+			if(a[0] == 'Y'){	//user wants to enter another number
+				continue;	//goes to line 31
 			}
 			return -0;		//user does not want to enter another number, so the program ends
 		}
@@ -78,7 +78,7 @@ int main(){
 		break;
 	}
 	q = 0;
-	while(p){					//converts the actual value (p) to user's base and store it as a string
+	while(p){					//converts the actual value (i.e p) to user's base and store it as a string
 		a[q++] = Convert_to_char(p % b);
 		p /= b; 
 	}
