@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>				//this library alows us to use strlen() to get the size of a string
+#include <string.h>				//this library allows us to use strlen() to get the size of a string
 #define pf printf				//defining macro pf to printf, making it easier to type :)
 #define sf scanf				//same as pf, but for scanf
 
@@ -29,7 +29,7 @@ int main(){
 	char a[1000] = "";
 	while(1){				//the loop is infinite, until user enters the right number and base or does not want to continue
 		pf("%s", "Enter a Number: ");
-		sf("%s", a);			//recives the number as string
+		sf("%s", a);			//receives the number as string
 		s = strlen(a);			//saves the length of string in s
 		pf("%s", "Enter the base of the number: ");
 		sf("%d", &b);
@@ -83,7 +83,7 @@ int main(){
 		p /= b; 
 	}
 	pf("%s%d%s", "Your number in base ", b, " is: ");	
-	for(int i = q - 1; i >= 0; i--){		//prints the number in the base user wanted 
+	for(int i = q - 1; i >= 0; i--){		//prints the number in the base user wants 
 		pf("%c", a[i]);
 	}
 	pf("%c", '\n');
